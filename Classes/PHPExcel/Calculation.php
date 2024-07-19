@@ -51,7 +51,6 @@ if (!defined('CALCULATION_REGEXP_CELLREF')) {
  */
 class PHPExcel_Calculation
 {
-    public $_debugLog;
     /** Constants                */
     /** Regular Expressions        */
     //    Numeric operand
@@ -2103,7 +2102,7 @@ class PHPExcel_Calculation
         if ($workbook !== null) {
             $instance = $workbook->getCalculationEngine();
             if (isset($instance)) {
-                return $instance;  
+                return $instance;
             }
         }
 

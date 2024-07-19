@@ -130,7 +130,6 @@ class PHPExcel_IOFactory
     {
         // Search type
         $searchType = 'IWriter';
-
         // Include class
         foreach (self::$searchLocations as $searchLocation) {
             if ($searchLocation['type'] == $searchType) {
